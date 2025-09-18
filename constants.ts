@@ -1,0 +1,86 @@
+
+import { User, Article, Role } from './types';
+
+export const USERS: User[] = [
+  {
+    id: '1',
+    name: 'Admin User',
+    email: 'admin@example.com',
+    password: 'adminpassword',
+    role: Role.ADMIN,
+    avatar: 'https://picsum.photos/seed/admin/200',
+    phoneNumber: '1234567890',
+    createdAt: '2023-01-15T09:30:00Z',
+  },
+  {
+    id: '2',
+    name: 'John Doe',
+    email: 'john.doe@example.com',
+    password: 'userpassword',
+    role: Role.USER,
+    avatar: 'https://picsum.photos/seed/user1/200',
+    createdAt: '2023-02-20T14:00:00Z',
+  },
+  {
+    id: '3',
+    name: 'Jane Smith',
+    email: 'jane.smith@example.com',
+    password: 'userpassword',
+    role: Role.USER,
+    avatar: 'https://picsum.photos/seed/user2/200',
+    createdAt: '2023-03-10T18:45:00Z',
+  },
+];
+
+export const ARTICLES: Article[] = [
+  {
+    id: 'a1',
+    title: 'The Future of Renewable Energy',
+    authorId: '2',
+    authorName: 'John Doe',
+    content: 'Renewable energy is poised to change the world. This article explores the latest advancements in solar, wind, and geothermal power sources and their impact on the global economy. We delve into the challenges and opportunities that lie ahead...',
+    imageUrl: 'https://picsum.photos/seed/energy/800/400',
+    createdAt: '2023-10-26T10:00:00Z',
+    status: 'APPROVED',
+  },
+  {
+    id: 'a2',
+    title: 'AI in Healthcare: A Revolution in Progress',
+    authorId: '3',
+    authorName: 'Jane Smith',
+    content: 'Artificial intelligence is transforming healthcare, from diagnostics to personalized treatment plans. Discover how machine learning algorithms are helping doctors make better decisions and improving patient outcomes. The ethical implications are also discussed.',
+    imageUrl: 'https://picsum.photos/seed/ai/800/400',
+    createdAt: '2023-10-25T15:30:00Z',
+    status: 'APPROVED',
+  },
+  {
+    id: 'a3',
+    title: 'Exploring the Deep Sea: New Discoveries',
+    authorId: '2',
+    authorName: 'John Doe',
+    content: 'Recent expeditions to the deepest parts of the ocean have revealed stunning new species and geological formations. This piece covers the latest findings and the incredible technologies that make such exploration possible. What mysteries does the abyss still hold?',
+    imageUrl: 'https://picsum.photos/seed/sea/800/400',
+    createdAt: '2023-10-24T12:00:00Z',
+    status: 'PENDING',
+  },
+    {
+    id: 'a4',
+    title: 'Urban Farming: A Sustainable Solution for Cities',
+    authorId: '3',
+    authorName: 'Jane Smith',
+    content: 'As urban populations grow, so does the demand for fresh, local food. Urban farming, from rooftop gardens to vertical farms, offers a promising solution. Learn about the benefits, challenges, and innovative techniques being used in cities around the world.',
+    imageUrl: 'https://picsum.photos/seed/farm/800/400',
+    createdAt: '2023-11-01T11:00:00Z',
+    status: 'APPROVED',
+  },
+  {
+    id: 'a5',
+    title: 'The Psychology of Decision Making',
+    authorId: '2',
+    authorName: 'John Doe',
+    content: 'Why do we make the choices we do? This article explores the cognitive biases and mental shortcuts that influence our daily decisions. Understanding these psychological principles can help us make better choices in our personal and professional lives.',
+    imageUrl: 'https://picsum.photos/seed/psychology/800/400',
+    createdAt: '2023-11-05T09:45:00Z',
+    status: 'APPROVED',
+  },
+];

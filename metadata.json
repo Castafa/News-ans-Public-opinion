@@ -1,0 +1,5 @@
+{
+  "name": "News and Public Opinion",
+  "description": "A responsive news platform with role-based access for admins, users, and visitors. Features include user and content management, analytics dashboards, and a modern, blurred-background UI.",
+  "requestFramePermissions": []
+}
